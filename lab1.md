@@ -21,7 +21,7 @@ Now, we are going to change into the lecture1 directory. See below.
 Notice that there is no output. However, the terminal command prompt has changed to indicate that we are now in the lecture1 directory.
 
 
-**Using `cd` command with with a path to a file as an argument:** \
+**Using `cd` command with a path to a file as an argument:** \
 Again, we are going to use the command 'pdw' to observe that we are currently in the lecture1 directory. See below. 
 ```
 [user@sahara ~/lecture1]$ pwd
@@ -55,7 +55,7 @@ Currently in the home directory, let us use the `ls` command with the lecture1 d
 Hello.class  Hello.java  messages  README
 ```
 
-**Using `ls` command with with a path to a file as an argument:** \
+**Using `ls` command with a path to a file as an argument:** \
 The current working directory is the home directory, and let us use the path to the README file. The output is the path to the file we gave as an argument. Since the argument is a file, there are no files or directories to list. 
 ```
 [user@sahara ~]$ ls /home/lecture1/README
@@ -76,7 +76,7 @@ The cat command is used to print the contents of *files*, not directory. Thus, w
 cat: lecture1/: Is a directory
 ```
 
-**Using `cat` command with with a path to a file as an argument:** \
+**Using `cat` command with a path to a file as an argument:** \
 This prints the contents of the file that we give the path to. 
 ```
 [user@sahara ~]$ cat /home/lecture1/messages/en-us.txt 
