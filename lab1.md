@@ -6,7 +6,8 @@ Notice that this has no output. This command is to change directories, and the a
 [user@sahara ~]$ cd
 ```
 
-**Using `cd` command with a path to a directory as an argument:**
+**Using `cd` command with a path to a directory as an argument:** \
+For context, using the command `pdw`, we see that we are durrently in the home directory.
 ```
 
 ```
