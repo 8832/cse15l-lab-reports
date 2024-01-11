@@ -1,7 +1,7 @@
 # Lab Report 1
 ## `cd` command
 **Using `cd` command with no arguments:** \
-Notice that this has no output. This command is used to change directories, and the argument is the directory to change into. In this case, we have give no directory to change into, so there is no output. 
+The cd command is used to change into directories, and the argument for this command is the directory we want to change into. In this case, we have give no directory to change into, so there is no output. 
 ```
 [user@sahara ~]$ cd
 [user@sahara ~]$
@@ -41,22 +41,25 @@ Since README is a file, and the `cd` command is used to change into directories,
 
 
 ## `ls` command
-**Using `ls` command with no arguments:**
+**Using `ls` command with no arguments:** \
+This command without an argument lists the files and directories available to access from the current working directory. Below, we are in the home directory, and using the `ls` command, we can see from the output that there is one directory listed. 
 ```
 [user@sahara ~]$ ls
 lecture1
 ```
 
-**Using `ls` command with a path to a directory as an argument:**
+**Using `ls` command with a path to a directory as an argument:** \
+Currently in the home directory, let us use the `ls` command with the lecture1 driectory as an argument. The output is the directories and files available from the lecture1 directory. 
 ```
 [user@sahara ~]$ ls lecture1
 Hello.class  Hello.java  messages  README
 ```
 
-**Using `ls` command with with a path to a file as an argument:**
+**Using `ls` command with with a path to a file as an argument:** \
+The current working directory is the home directory, and let us use the path to the README file. The output is the path to the file we gave as an argument. Since the argument is a file, there are no files or directories to list. 
 ```
-[user@sahara ~]$ ls lecture1/README 
-lecture1/README
+[user@sahara ~]$ ls /home/lecture1/README
+/home/lecture1/README
 ```
 
 ## `cat` command
