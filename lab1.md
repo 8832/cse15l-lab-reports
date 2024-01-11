@@ -8,7 +8,7 @@ The cd command is used to change into directories, and the argument for this com
 [user@sahara ~]$ cd
 [user@sahara ~]$
 ```
-This output is not an error.
+This output is not an error. \
 
 **Using `cd` command with a path to a directory as an argument:** \
 The current working directory is /home. \
@@ -18,7 +18,7 @@ Now, let us change into the lecture1 directory.
 [user@sahara ~/lecture1]$ 
 ```
 Notice that there is no output. However, the terminal command prompt has changed to indicate that we are now in the lecture1 directory.
-This output is not an error. 
+This output is not an error. \
 
 **Using `cd` command with a path to a file as an argument:** \
 Using the command 'pdw' , we can observe that we are currently in the lecture1 directory. See below. 
@@ -37,7 +37,7 @@ Let us to try to use the `cd` command to change into the README file. See below.
 bash: cd: README: Not a directory
 ```
 Since README is a file, and the `cd` command is used to change into directories, the output gives use the message that the file is not a directory.
-This output is not an error. Instead, we get a message indicating that our argument needs to be a directory. 
+This output is not an error. Instead, we get a message indicating that our argument needs to be a directory. \
 
 ## `ls` command
 **Using `ls` command with no arguments:** \
@@ -47,7 +47,7 @@ This command without an argument lists the files and directories available to ac
 [user@sahara ~]$ ls
 lecture1
 ```
-This output is not an error. 
+This output is not an error. \
 **Using `ls` command with a path to a directory as an argument:** \
 The current working directory is /home. \
 Let us use the `ls` command with the lecture1 driectory as an argument. The output is the directories and files available directly from the lecture1 directory. 
@@ -55,14 +55,14 @@ Let us use the `ls` command with the lecture1 driectory as an argument. The outp
 [user@sahara ~]$ ls lecture1
 Hello.class  Hello.java  messages  README
 ```
-This output is not an error.
+This output is not an error.\
 **Using `ls` command with a path to a file as an argument:** \
 The current working directory is the home directory, and let us use the path to the README file. The output is the path to the file we gave as an argument. Since the argument is a file, there are no files or directories to list. 
 ```
 [user@sahara ~]$ ls /home/lecture1/README
 /home/lecture1/README
 ```
-This output is not an error. 
+This output is not an error. \
 ## `cat` command
 **Using `cat` command with no arguments:** \
 The current working directory is /home. \
@@ -78,7 +78,7 @@ The cat command is used to print the contents of *files*, not directory. Thus, w
 [user@sahara ~]$ cat lecture1/
 cat: lecture1/: Is a directory
 ```
-This output is not an error. 
+This output is not an error. \
 **Using `cat` command with a path to a file as an argument:** \
 The current working directory is /home. \
 The `cat` command prints the contents of the file that we give the path to. 
