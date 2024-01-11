@@ -1,6 +1,6 @@
 # Lab Report 1
 ## `cd` command
-**Using `cd` command with no arguments:**
+**Using `cd` command with no arguments:** \
 Notice that this has no output. 
 ```
 [user@sahara ~]$ cd
