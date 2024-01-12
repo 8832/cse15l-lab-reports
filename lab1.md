@@ -8,7 +8,7 @@ The cd command is used to change into directories, and the argument for this com
 [user@sahara ~]$ cd
 [user@sahara ~]$
 ```
-This output is not an error. \
+This output is not an error. 
  
 **Using `cd` command with a path to a directory as an argument:** \
 The current working directory is /home. \
@@ -18,7 +18,7 @@ Now, let us change into the lecture1 directory.
 [user@sahara ~/lecture1]$ 
 ```
 Notice that there is no output. However, the terminal command prompt has changed to indicate that we are now in the lecture1 directory.
-This output is not an error. \
+This output is not an error. 
 
 **Using `cd` command with a path to a file as an argument:** \
 Using the command 'pdw' , we can observe that we are currently in the lecture1 directory. See below. 
@@ -79,6 +79,7 @@ The cat command is used to print the contents of *files*, not directory. Thus, w
 cat: lecture1/: Is a directory
 ```
 This output is not an error. \
+
 **Using `cat` command with a path to a file as an argument:** \
 The current working directory is /home. \
 The `cat` command prints the contents of the file that we give the path to. 
