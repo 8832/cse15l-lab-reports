@@ -78,7 +78,7 @@ The cat command is used to print the contents of *files*, not directory. Thus, w
 [user@sahara ~]$ cat lecture1/
 cat: lecture1/: Is a directory
 ```
-This output is not an error. \
+This output is not an error. 
 
 **Using `cat` command with a path to a file as an argument:** \
 The current working directory is /home. \
