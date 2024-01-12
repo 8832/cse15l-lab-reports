@@ -8,7 +8,7 @@ The cd command is used to change into directories, and the argument for this com
 [user@sahara ~]$ cd
 [user@sahara ~]$
 ```
-This output is not an error. 
+This output is not an error. \
  
 **Using `cd` command with a path to a directory as an argument:** \
 The current working directory is /home. \
@@ -37,7 +37,7 @@ Let us to try to use the `cd` command to change into the README file. See below.
 bash: cd: README: Not a directory
 ```
 Since README is a file, and the `cd` command is used to change into directories, the output gives use the message that the file is not a directory.
-This output is not an error. Instead, we get a message indicating that our argument needs to be a directory. \
+This output is not an error. Instead, we get a message indicating that our argument needs to be a directory. 
 
 ## `ls` command
 **Using `ls` command with no arguments:** \
@@ -62,7 +62,7 @@ The current working directory is the home directory, and let us use the path to 
 [user@sahara ~]$ ls /home/lecture1/README
 /home/lecture1/README
 ```
-This output is not an error. \
+This output is not an error. 
 ## `cat` command
 **Using `cat` command with no arguments:** \
 The current working directory is /home. \
