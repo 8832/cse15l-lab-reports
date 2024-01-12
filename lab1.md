@@ -75,7 +75,7 @@ The command `cat` is used to print the contents of one or more files given by th
 ```
 **Using `cat` command with a path to a directory as an argument:** \
 The current working directory is /home. \
-The cat command is used to print the contents of *files*, not directory. Thus, when running this command with a directory argument, we get the output notifying us that our argument is a directory. See below. 
+The cat command is used to print the contents of *files*, not directories. Thus, when running this command with a directory argument, we get the output notifying us that our argument is a directory. See below. 
 ```
 [user@sahara ~]$ cat lecture1/
 cat: lecture1/: Is a directory
@@ -84,7 +84,7 @@ This output is not an error.
 
 **Using `cat` command with a path to a file as an argument:** \
 The current working directory is /home. \
-The `cat` command prints the contents of the file that we give the path to. 
+The `cat` command prints the contents of the file that we give the path to. In this case, we enter the path to the file en-us.txt, which containes the sentence "Hello World!". 
 ```
 [user@sahara ~]$ cat /home/lecture1/messages/en-us.txt 
 Hello World!
