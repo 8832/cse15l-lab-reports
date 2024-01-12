@@ -84,7 +84,7 @@ This output is not an error.
 
 **Using `cat` command with a path to a file as an argument:** \
 The current working directory is /home. \
-The `cat` command prints the contents of the file that we give the path to. In this case, we enter the path to the file en-us.txt, which containes the sentence "Hello World!". 
+The `cat` command prints the contents of the file that we give the path to. In this case, we enter the path to the file en-us.txt, which contains the sentence "Hello World!". 
 ```
 [user@sahara ~]$ cat /home/lecture1/messages/en-us.txt 
 Hello World!
