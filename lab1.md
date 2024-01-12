@@ -17,11 +17,11 @@ Now, let us change into the lecture1 directory.
 [user@sahara ~]$ cd lecture1/
 [user@sahara ~/lecture1]$ 
 ```
-Notice that there is no output. However, the terminal command prompt has changed to indicate that we are now in the lecture1 directory.
+Notice that there is no output. However, the terminal command prompt has changed to indicate that we are now in the lecture1 directory. \
 This output is not an error. 
 
 **Using `cd` command with a path to a file as an argument:** \
-Using the command 'pdw' , we can observe that we are currently in the lecture1 directory. See below. 
+Using the command `pdw` , we can observe that we are currently in the lecture1 directory. See below. 
 ```
 [user@sahara ~/lecture1]$ pwd
 /home/lecture1
@@ -48,6 +48,7 @@ This command without an argument lists the files and directories available to ac
 lecture1
 ```
 This output is not an error. \
+
 **Using `ls` command with a path to a directory as an argument:** \
 The current working directory is /home. \
 Let us use the `ls` command with the lecture1 driectory as an argument. The output is the directories and files available directly from the lecture1 directory. 
@@ -63,6 +64,7 @@ The current working directory is the home directory, and let us use the path to 
 /home/lecture1/README
 ```
 This output is not an error. 
+
 ## `cat` command
 **Using `cat` command with no arguments:** \
 The current working directory is /home. \
