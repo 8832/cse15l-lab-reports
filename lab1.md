@@ -31,12 +31,12 @@ Using the ls command, we can see the possible files and directories we can chang
 [user@sahara ~/lecture1]$ ls
 Hello.class  Hello.java  messages  README
 ```
-Let us to try to use the `cd` command to change into the README file. See below. 
+Let us try to use the `cd` command to change into the README file. See below. 
 ```
 [user@sahara ~/lecture1]$ cd README
 bash: cd: README: Not a directory
 ```
-Since README is a file, and the `cd` command is used to change into directories, the output gives use the message that the file is not a directory.
+Since README is a file, and the `cd` command is used to change into directories, the output gives us the message that the file is not a directory.
 This output is not an error. Instead, we get a message indicating that our argument needs to be a directory. 
 
 ## `ls` command
@@ -51,7 +51,7 @@ This output is not an error. \
 
 **Using `ls` command with a path to a directory as an argument:** \
 The current working directory is /home. \
-Let us use the `ls` command with the lecture1 driectory as an argument. The output is the directories and files available directly from the lecture1 directory. 
+Let us use the `ls` command with the lecture1 directory as an argument. The output is the directories and files available directly from the lecture1 directory. 
 ```
 [user@sahara ~]$ ls lecture1
 Hello.class  Hello.java  messages  README
@@ -68,7 +68,7 @@ This output is not an error.
 ## `cat` command
 **Using `cat` command with no arguments:** \
 The current working directory is /home. \
-The command `cat` is used to print the contents of one or more files gieven by the paths. When using the `cat` command without arguments in the terminal, no output is given but the terminal keeps running. This is an error. It is neccessary to force stop the terminal (ctrl+Z) in order to get back to the command line prompt.
+The command `cat` is used to print the contents of one or more files given by the paths. When using the `cat` command without arguments in the terminal, no output is given but the terminal keeps running. This is an error. It is necessary to force stop the terminal (ctrl+Z) in order to get back to the command line prompt.
 ```
 [user@sahara ~]$ cat
 
