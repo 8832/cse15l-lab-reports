@@ -8,7 +8,7 @@ The cd command is used to change into directories, and the argument for this com
 [user@sahara ~]$ cd
 [user@sahara ~]$
 ```
-This output is not an error. \
+This output is not an error. 
  
 **Using `cd` command with a path to a directory as an argument:** \
 The current working directory is /home. \
