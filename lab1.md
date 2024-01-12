@@ -21,7 +21,7 @@ Notice that there is no output. However, the terminal command prompt has changed
 This output is not an error. 
 
 **Using `cd` command with a path to a file as an argument:** \
-Using the command `pdw` , we can observe that we are currently in the lecture1 directory. See below. 
+Using the command `pwd` , we can observe that we are currently in the lecture1 directory. See below. 
 ```
 [user@sahara ~/lecture1]$ pwd
 /home/lecture1
