@@ -47,7 +47,7 @@ This command without an argument lists the files and directories available to ac
 [user@sahara ~]$ ls
 lecture1
 ```
-This output is not an error. \
+This output is not an error. 
 
 **Using `ls` command with a path to a directory as an argument:** \
 The current working directory is /home. \
