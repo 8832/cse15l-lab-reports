@@ -69,7 +69,6 @@ The current working directory is the home directory, and let us use the path to 
 ```
 This output is not an error. 
 
-
 ## `cat` command
 **Using `cat` command with no arguments:** \
 The current working directory is /home. \
