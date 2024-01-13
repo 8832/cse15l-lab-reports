@@ -10,7 +10,7 @@ The cd command is used to change into directories, and the argument for this com
 ```
 This output is not an error. 
  
-### **Using `cd` command with a path to a directory as an argument:** \
+**Using `cd` command with a path to a directory as an argument:** \
 The current working directory is /home. \
 Now, let us change into the lecture1 directory. 
 ```
