@@ -9,6 +9,7 @@ The cd command is used to change into directories, and the argument for this com
 [user@sahara ~]$
 ```
 This output is not an error. 
+
  
 **Using `cd` command with a path to a directory as an argument:** \
 The current working directory is /home. \
@@ -19,6 +20,7 @@ Now, let us change into the lecture1 directory.
 ```
 Notice that there is no output. However, the terminal command prompt has changed to indicate that we are now in the lecture1 directory. \
 This output is not an error. 
+
 
 **Using `cd` command with a path to a file as an argument:** \
 Using the command `pwd` , we can observe that we are currently in the lecture1 directory. See below. 
@@ -39,6 +41,7 @@ bash: cd: README: Not a directory
 Since README is a file, and the `cd` command is used to change into directories, the output gives us the message that the file is not a directory.
 This output is not an error. Instead, we get a message indicating that our argument needs to be a directory. 
 
+
 ## `ls` command
 **Using `ls` command with no arguments:** \
 The current working directory is /home. \
@@ -48,6 +51,7 @@ This command without an argument lists the files and directories available to ac
 lecture1
 ```
 This output is not an error. 
+
 
 **Using `ls` command with a path to a directory as an argument:** \
 The current working directory is /home. \
@@ -65,6 +69,7 @@ The current working directory is the home directory, and let us use the path to 
 ```
 This output is not an error. 
 
+
 ## `cat` command
 **Using `cat` command with no arguments:** \
 The current working directory is /home. \
@@ -73,7 +78,8 @@ The command `cat` is used to print the contents of one or more files given by th
 [user@sahara ~]$ cat
 
 ```
-This is not an error. \
+This is not an error. 
+
 
 **Using `cat` command with a path to a directory as an argument:** \
 The current working directory is /home. \
@@ -83,6 +89,7 @@ The cat command is used to print the contents of *files*, not directories. Thus,
 cat: lecture1/: Is a directory
 ```
 This output is not an error. 
+
 
 **Using `cat` command with a path to a file as an argument:** \
 The current working directory is /home. \
