@@ -68,11 +68,12 @@ This output is not an error.
 ## `cat` command
 **Using `cat` command with no arguments:** \
 The current working directory is /home. \
-The command `cat` is used to print the contents of one or more files given by the paths. When using the `cat` command without arguments in the terminal, no output is given but the terminal keeps running. This is an error. It is necessary to force stop the terminal (ctrl+Z) in order to get back to the command line prompt.
+The command `cat` is used to print the contents of one or more files given by the paths. When using the `cat` command without arguments in the terminal, no output is initially given but the terminal keeps running. The terminal will wait for input from the user. When you manually type text and hit enter, the text you type will be repeated back to you on the following line. You can press Ctrl+D to return to the command line prompt. The text displayed is the text you wrote with each line duplicated. 
 ```
 [user@sahara ~]$ cat
 
 ```
+This is not an error.
 **Using `cat` command with a path to a directory as an argument:** \
 The current working directory is /home. \
 The cat command is used to print the contents of *files*, not directories. Thus, when running this command with a directory argument, we get the output notifying us that our argument is a directory. See below. 
