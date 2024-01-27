@@ -24,7 +24,7 @@ As we can see by the `pwd` command, our current working directory is now the lec
 [user@sahara ~/lecture1]$ cd
 [user@sahara ~]$
 ```
-Notice the command line prompt has changed back to `[user@sahara ~]$`. As shown above, this new command line prompt shows that we are now in the home directory. \
+Notice the command line prompt has changed back to `[user@sahara ~]$`. As shown previously, this new command line prompt shows that we are now in the home directory. \
 *Case 3*: Say we are in directory that is deeply nested: 
 ```
 [user@sahara ~/lecture1/messages]$ pwd
@@ -35,7 +35,7 @@ Now, let us use the `cd` command with no arguments.
 [user@sahara ~/lecture1/messages]$ cd
 [user@sahara ~]$
 ```
-As we can see, we have returned to the home directory, as shown by the change in the command line prompt to `[user@sahara ~]$`. As shown above, this new command line prompt shows that we are in the home directory. \
+As we can see, we have returned to the home directory, as shown by the change in the command line prompt to `[user@sahara ~]$`. As shown previously, this new command line prompt shows that we are in the home directory. \
 *Case 4:* Suppose we are in the root directory.
 ```
 [user@sahara /]$ pwd
