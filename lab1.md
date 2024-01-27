@@ -2,14 +2,53 @@
 By: Sara Standlee
 ## `cd` command
 **Using `cd` command with no arguments:** \
-The current working directory is /home. \
-The cd command is used to change into directories, and the argument for this command is the directory we want to change into. In this case, we have given no directory to change into, so there is no output. 
+The cd command is used to change into directories, and the argument for this command is the directory we want to change into. When we do not give an argument, and the home environment variable is non-empty, the `cd` command operates as if the home environment was the specified directory we want to change into. In other words, when we use the `cd` command with no arguments, we will change into the home environment. If our current working directory is the home environment, then we will remain in the home environment. Below are some cases: \
+*Case One:* Let's consider the case where our current working directory is the home directory:
+```
+[user@sahara ~]$ pwd
+/home
+```
+Note that `pwd` is the command used to print the working directory. As we can see by the above code, the home directory is represented by the command line prompt `[user@sahara ~]$`. Thus, as we can see, we are currently in the home directory. Let us now use the `cd` command:
 ```
 [user@sahara ~]$ cd
+[user@sahara ~]$ 
+```
+Notice that in the case where the current working directory is the home directory, nothing happens. We remain in the home directory. Since we were already in the home environment, and the `cd` command without an argument will use the home directory as the argument, nothing happens, since we are 'changing' into the home directory, and were already in the home directory. \
+*Case 2:* Let's consider the case when we are NOT in the home directory, but instead in a random directory:
+```
+[user@sahara ~/lecture1]$ pwd
+/home/lecture1
+```
+As we can see by the `pwd` command, our current working directory is now the lecture1 directory. Let's now use the `cd` command with no arguments:
+```
+[user@sahara ~/lecture1]$ cd
 [user@sahara ~]$
 ```
+Notice the command line prompt has changed back to `[user@sahara ~]$`. This shows that we are now in the home directory. \
+*Case 3*: Say we are in directory that is deeply nested: 
+```
+[user@sahara ~/lecture1/messages]$ pwd
+/home/lecture1/messages
+```
+Now, let us use the `cd` command with no arguments.
+```
+[user@sahara ~/lecture1/messages]$ cd
+[user@sahara ~]$
+```
+As we can see, we have returned to the home directory, as shown by the change in the command line prompt to `[user@sahara ~]$`. As shown above, this new command line prompt shows that we are in the home directory. 
+*Case 4:* Suppose we are in the root directory.
+```
+[user@sahara /]$ pwd
+/
+```
+As shown by the `pwd` command, our current working directory is now the root directory, which is shown by the `/`. Now, let us ise the `cd` command with no arguments:
+```
+[user@sahara /]$ cd
+[user@sahara ~]$ 
+```
+Notice that we have changed into the home directory, as shown by the command line prompt `[user@sahara ~]$`. As shown above, this command line prompt shows that our current working directory is the home directory. \ 
+To conclude, the `cd` command with no arguments will operate as if the home directory was the argument. We will change into the home directory no matter whether we are in a random directory, a deeply nested directory, the root directory, etc. \
 This output is not an error. 
-
  
 **Using `cd` command with a path to a directory as an argument:** \
 The current working directory is /home. \
