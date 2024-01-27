@@ -111,14 +111,14 @@ public class Server {
 Two screenshorts using the /add-message: \
 ![Image](RobertHelloLab2.JPG)
 In this screenshot, the `handleRequest()` method is called. \
-The relevant argument for the `handleRequest()` method is a url. As seen in the image, the url path `add-message?s=Hello&user=Robert` is used, and this is the argument for the method in this case. To keep track of the overall String to display, I used the class field `StringBuilder stringBuilder = new StringBuilder();`. This keeps track of all the Strings created from the user input from the url.  \
+The relevant argument for the `handleRequest()` method is a url. As seen in the image, the url path `add-message?s=Hello&user=Robert` is used, and this is the argument for the method in this case. To keep track of the overall String to be returned, I use the class field `StringBuilder stringBuilder = new StringBuilder();`. This keeps track of all the Strings created from the user input from the url.  \
 The values of this field had changed with the request in the url. It had gone from empty to containing the String `"Robert: Hello"`. 
 
 
 ![Image](AnnieHiLab2.JPG)
 In this screenshot, the `handleRequest()` method is once again called. \
-Same as before, the relevant argument for the `handleRequest()` method is a url. As seen in the image, the url path `add-message?s=Hi&user=Anne` is used, and this is the argument for the `handleRequest()` method in this case. Once again, to keep track of the overall String to display, I used the class field `StringBuilder stringBuilder = new StringBuilder();`. This keeps track of all the Strings created from the user input from the url. Notice that since `add-message?s=Hello&user=Robert` had been inputted into the url before the `add-message?s=Hi&user=Anne`, the class field `stringBuilder` already contained `"Robert: Hello"`. Since the url contains the add method, the code in the if-statement within the handRequest method (that senses if the url containst `"/add-message"`) runs. The String `"Anne: Hi"` is appended to the class field stringBuilder on a new line, the updated stringBuilder is returned, as can be seen in the screenshot. \
-The values of the stringBuilder field had changed with the request in the url. It had gone from just containing `Robert: Hello" to also containing the String `"Anne: Hi"`, on a new line.  
+Same as before, the relevant argument for the `handleRequest()` method is a url. As seen in the image, the url path `add-message?s=Hi&user=Anne` is used, and this is the argument for the `handleRequest()` method in this case. Once again, to keep track of the overall String to display, I use the class field `StringBuilder stringBuilder = new StringBuilder();`. This keeps track of all the Strings created from the user input from the url. Notice that since `add-message?s=Hello&user=Robert` had been inputted into the url before the `add-message?s=Hi&user=Anne`, the class field `stringBuilder` already contained `"Robert: Hello"`. Since the url input contains the add method, the code in the if-statement within the `handRequest()` method (that senses if the url containst `"/add-message"`) runs. The String `"Anne: Hi"` is appended to the class field `stringBuilder` on a new line, and the updated `stringBuilder` is returned, as can be seen in the screenshot. \
+The values of the `stringBuilder` field had changed with the request in the url. It had gone from just containing `Robert: Hello" to also containing the String `"Anne: Hi"`, on a new line.  
 
 
 ## Part 2
