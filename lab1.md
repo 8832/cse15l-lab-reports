@@ -126,7 +126,7 @@ The cat command is used to print the contents of *files*, not directories. Thus,
 [user@sahara ~]$ cat lecture1/
 cat: lecture1/: Is a directory
 ```
-This output is not an error. 
+This output is an error. The "Is a directory" is an error message. We did not achieve our expectation of printing the contents since we used a directory as an argument instead of the command's expectation of a file argument. 
 
 
 **Using `cat` command with a path to a file as an argument:** \
