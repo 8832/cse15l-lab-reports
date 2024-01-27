@@ -46,7 +46,7 @@ As shown by the `pwd` command, our current working directory is now the root dir
 [user@sahara /]$ cd
 [user@sahara ~]$ 
 ```
-Notice that we have changed into the home directory, as shown by the command line prompt `[user@sahara ~]$`. As shown above, this command line prompt shows that our current working directory is the home directory. \ 
+Notice that we have changed into the home directory, as shown by the command line prompt `[user@sahara ~]$`. As shown previously, this command line prompt shows that our current working directory is the home directory. \
 To conclude, the `cd` command with no arguments will operate as if the home directory was the argument. We will change into the home directory no matter whether we are in a random directory, a deeply nested directory, the root directory, etc. \
 This output is not an error. 
  
