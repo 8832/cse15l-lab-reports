@@ -2,7 +2,7 @@
 By: Sara Standlee
 ## `cd` command
 **Using `cd` command with no arguments:** \
-The cd command is used to change into directories, and the argument for this command is the directory we want to change into. When we do not give an argument, and the home environment variable is non-empty, the `cd` command operates as if the home environment was the specified directory we want to change into. In other words, when we use the `cd` command with no arguments, we will change into the home environment. If our current working directory is the home environment, then we will remain in the home environment. Below are some cases: \
+The `cd` command is used to change into directories, and the argument for this command is the directory we want to change into. When we do not give an argument, and the home environment variable is non-empty, the `cd` command operates as if the home environment was the specified directory we want to change into. In other words, when we use the `cd` command with no arguments, we will change into the home environment. If our current working directory is the home environment, then we will remain in the home environment. Below are some cases: \
 *Case One:* Let's consider the case where our current working directory is the home directory:
 ```
 [user@sahara ~]$ pwd
