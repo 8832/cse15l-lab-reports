@@ -78,7 +78,7 @@ Let us try to use the `cd` command to change into the README file. See below.
 bash: cd: README: Not a directory
 ```
 Since README is a file, and the `cd` command is used to change into directories, the output gives us the message that the file is not a directory.
-This output is not an error. Instead, we get a message indicating that our argument needs to be a directory. 
+This is an error. The command did not fulfill its intended purpose of changing directories, and instead the error message "Not a directory" was displayed. 
 
 
 ## `ls` command
