@@ -41,7 +41,7 @@ As we can see, we have returned to the home directory, as shown by the change in
 [user@sahara /]$ pwd
 /
 ```
-As shown by the `pwd` command, our current working directory is now the root directory, which is shown by the `/`. Now, let us ise the `cd` command with no arguments:
+As shown by the `pwd` command, our current working directory is now the root directory, which is shown by the `/`. Now, let us use the `cd` command with no arguments:
 ```
 [user@sahara /]$ cd
 [user@sahara ~]$ 
