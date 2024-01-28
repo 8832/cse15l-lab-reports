@@ -111,7 +111,7 @@ public class Server {
 Two screenshorts using the /add-message: \
 ![Image](RobertHelloLab2.JPG) \
 In this screenshot, the `handleRequest()` method is called. \
-The relevant argument for the `handleRequest()` method is a url. As seen in the image, the url path `add-message?s=Hello&user=Robert` is used, and this is the argument for the method in this case. To keep track of the overall String to be returned, I use the class field `StringBuilder stringBuilder = new StringBuilder();`. This keeps track of all the Strings added from the user input into the url.  \
+The relevant argument for the `handleRequest()` method is a url. As seen in the image, the url path `/add-message?s=Hello&user=Robert` is used, and this is the argument for the method in this case. To keep track of the overall String to be returned, I use the class field `StringBuilder stringBuilder = new StringBuilder();`. This keeps track of all the Strings added from the user input into the url.  \
 The values of this field had changed with the request in the url. It had gone from empty to containing the String `"Robert: Hello"`. 
 
 
