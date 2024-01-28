@@ -113,14 +113,14 @@ Two screenshorts using the `/add-message`: \
 ![Image](RobertHelloLab2.JPG) \
 In this screenshot, the `handleRequest()` method is called. \
 The relevant argument for the `handleRequest()` method is a url. As seen in the image, the url path `/add-message?s=Hello&user=Robert` is used, and this is the argument for the method in this case. To keep track of the overall String to be returned, I use the class field `String stringBuilder = ""`. This keeps keep track of a single String that gets added to by incoming requests. \
-The values of this field change with incoming rquests that include `/add-message`. When requests that contain `/add-message` are recieved, the code in the if-statement for this condition run, and a new line is added to the initial stringBuilder. In this case, stringBuilder had gone from an empty String (`""`) to a String containing `"Robert: Hello"`, which is returned. 
+The values of this field change with incoming requests that include `/add-message`. When requests that contain `/add-message` are recieved, the code in the if-statement for this condition run, and a new line is added to the initial stringBuilder. In this case, stringBuilder had gone from an empty String (`""`) to a String containing `"Robert: Hello"`, which is returned. 
 
 
 ![Image](AnnieHiLab2.JPG) \
  \
  \
 In this screenshot, the `handleRequest()` method is once again called. \
-Same as before, the relevant argument for the `handleRequest()` method is a url. As seen in the image, the url path `/add-message?s=Hi&user=Anne` is used, and this is the argument for the `handleRequest()` method in this case. Once again, to keep track of the overall String to be returned, I use the class field `String stringBuilder = "";`. Notice that `/add-message?s=Hello&user=Robert` had already been inputted into the url. This means the variable `stringBuilder` is currently set to be `"Robert: Hello\n`. Inputting the url `/add-message?s=Hi&user=Anne` adds to the initial String, and concatinates the `"Rober: Hello\n"` with `"Anne: Hello\n"`. We see this in the screenshot above. \
+Same as before, the relevant argument for the `handleRequest()` method is a url. As seen in the image, the url path `/add-message?s=Hi&user=Anne` is used, and this is the argument for the `handleRequest()` method in this case. Once again, to keep track of the overall String to be returned, I use the class field `String stringBuilder = "";`. Notice that `/add-message?s=Hello&user=Robert` had already been inputted into the url. This means the variable `stringBuilder` is currently set to be `"Robert: Hello\n`. Inputting the url `/add-message?s=Hi&user=Anne` adds to the initial String, and concatinates the `"Rober: Hello\n"` with `"Anne: Hello\n"`. We see the results of this in the screenshot above. \
  \
 Also, note that to get the server running, the other methods are used, including the `main()` method, the `handle()` method, and the `start()` method. In the `main()` method (of `ChatServer`), the first command line argument (`args[0]`) is parsed as an integer and passed as the port number. \
 In the terminal, we run the following to start the server:
