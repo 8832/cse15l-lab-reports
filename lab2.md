@@ -1,7 +1,7 @@
 # Lab Report 2
 By: Sara Standlee
 ## Part 1
-Below is the code for a web server called `ChatServer`. There are four java classes for this server. \ 
+Below is the code for a web server called `ChatServer`. There are four java classes for this server. \
 First, in the ChatServer.java file, we have:
 
 ```
