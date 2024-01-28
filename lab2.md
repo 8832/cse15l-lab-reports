@@ -133,6 +133,20 @@ Notice that in this case, we used port number 4000. This port number is the argu
 
 
 ## Part 2
+Using the command line:
+![Image](labReport2AbsolutePath.JPG) \
+As we can see from the image, the absolute path to the *private* key for my SSH key for logging into `ieng6` (on an EdStem workspace) is: `/home/.ssh/id_ed25519`. \
+Aslo, as we can also see from the image, the absolute path to the *public* key for my SSH key for logging into `ieng6` (on an Edstem workspace) is: `/home/.ssh/id_ed25519.pub`. \
+
+![Image](labReport2PrivatePath.JPG) \
+This screenshot depicts the *public* key that I copied to my account on `ieng6`. The absolute path on ieng6's file system is: `/home/linux/ieng6/oce/43/243/sstandlee/.ssh/authorized_keys`. \
+ \
+Below is a screenshot of a terminal interaction where I log into my `ieng6` account *without* being asked for a password: \
+![Image](lab2LogInIeng6WithoutPassword.JPG) \
+
+
+## Part 3
+One of the key things I've learned that I didn't know before was how to remotely connect to a server. Specifically, we did this through the command `ssh myUsername@ieng6.ucsd.edu`, which initiates a secure connection to the server ieng6.ucsd.edu with my provided username. This secure connection allows me to access and manage files, execute commands, and perform tasks on the remote server. I also have know previous knowledge on building and running servers, so I learned that during Week 2 and Week 3 as well. 
 
 
 
