@@ -133,7 +133,7 @@ Notice that in this case, we used port number 4000. This port number is the argu
 
 
 ## Part 2
-Using the command line:
+Using the command line: \
 ![Image](labReport2AbsolutePath.JPG) \
 As we can see from the image, the absolute path to the *private* key for my SSH key for logging into `ieng6` (on an EdStem workspace) is: `/home/.ssh/id_ed25519`. \
 Aslo, as we can also see from the image, the absolute path to the *public* key for my SSH key for logging into `ieng6` (on an Edstem workspace) is: `/home/.ssh/id_ed25519.pub`. \
