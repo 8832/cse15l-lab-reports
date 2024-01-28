@@ -109,7 +109,7 @@ public class Server {
 }
 ```
 
-Two screenshorts using the /add-message: \
+Two screenshorts using the `/add-message`: \
 ![Image](RobertHelloLab2.JPG) \
 In this screenshot, the `handleRequest()` method is called. \
 The relevant argument for the `handleRequest()` method is a url. As seen in the image, the url path `/add-message?s=Hello&user=Robert` is used, and this is the argument for the method in this case. To keep track of the overall String to be returned, I use the class field `String stringBuilder = ""`. This keeps keep track of a single string that gets added to by incoming requests. \
