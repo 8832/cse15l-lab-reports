@@ -112,7 +112,7 @@ public class Server {
 Two screenshorts using the `/add-message`: \
 ![Image](RobertHelloLab2.JPG) \
 In this screenshot, the `handleRequest()` method is called. \
-The relevant argument for the `handleRequest()` method is a url. As seen in the image, the url path `/add-message?s=Hello&user=Robert` is used, and this is the argument for the method in this case. To keep track of the overall String to be returned, I use the class field `String stringBuilder = ""`. This keeps keep track of a single string that gets added to by incoming requests. \
+The relevant argument for the `handleRequest()` method is a url. As seen in the image, the url path `/add-message?s=Hello&user=Robert` is used, and this is the argument for the method in this case. To keep track of the overall String to be returned, I use the class field `String stringBuilder = ""`. This keeps keep track of a single String that gets added to by incoming requests. \
 The values of this field change with incoming rquests that include `/add-message`. When requests that contain `/add-message` are recieved, the code in the if-statement for this condition run, and a new line is added to the initial stringBuilder. In this case, stringBuilder had gone from an empty String (`""`) to a String containing `"Robert: Hello"`, which is returned. 
 
 
