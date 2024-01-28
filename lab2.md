@@ -137,7 +137,6 @@ Using the command line: \
 ![Image](labReport2AbsolutePath.JPG) \
 As we can see from the image, the absolute path to the *private* key for my SSH key for logging into `ieng6` (on an EdStem workspace) is: `/home/.ssh/id_ed25519`. \
 Aslo, as we can also see from the image, the absolute path to the *public* key for my SSH key for logging into `ieng6` (on an Edstem workspace) is: `/home/.ssh/id_ed25519.pub`. \
-
 ![Image](labReport2PrivatePath.JPG) \
 This screenshot depicts the *public* key that I copied to my account on `ieng6`. The absolute path on ieng6's file system is: `/home/linux/ieng6/oce/43/243/sstandlee/.ssh/authorized_keys`. \
  \
