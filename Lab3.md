@@ -20,6 +20,6 @@ By: Sara Standlee
   \
 Why this fixed the issue: \
 one 
-\
+\ 
 \ 
   ## Part 2 - Researching Commands
