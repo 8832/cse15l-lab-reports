@@ -5,12 +5,12 @@ By: Sara Standlee
   ```
   one
   ```
-  * An input that doesn't induce a failure (as a JUnit test):
+* An input that doesn't induce a failure (as a JUnit test):
   ```
   two
   ```
-  * The symptom, as the output of running the tests
-  * The bug, as the before-and-after code change required to fix it
+* The symptom, as the output of running the tests
+* The bug, as the before-and-after code change required to fix it
   ```
   onee
   ```
@@ -18,8 +18,8 @@ By: Sara Standlee
   two
   ```
   \
-  Why this fixed the issue: \
-  one
-  \
-  \
+Why this fixed the issue: \
+one
+\
+\
   ## Part 2 - Researching Commands
