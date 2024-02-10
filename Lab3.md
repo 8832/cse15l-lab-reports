@@ -19,5 +19,5 @@ By: Sara Standlee
   ```
   \
 Why this fixed the issue: \
-one\
+one \
   ## Part 2 - Researching Commands
