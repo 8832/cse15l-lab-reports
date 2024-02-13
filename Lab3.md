@@ -1,7 +1,7 @@
 # Lab Report 3
 By: Sara Standlee
 ## Part 1 - Bugs
-* A failure-inducing input for the buggy program (as a JUnit test): \
+* A failure-inducing input for the buggy program (as a JUnit test): 
   ```
   import static org.junit.Assert.*;
   import org.junit.*;
