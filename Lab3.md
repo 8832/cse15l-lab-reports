@@ -169,7 +169,7 @@ The main issue was the line `arr[i] = newArray[arr.length - i - 1];` in the 'bef
       $ find -mtime -1
       ```
     - Example 2: \
-      Around several minutes after running the command above, I made a modification to the file `chapter-1.txt`. Now, this example uses the same command as the previous example to demonstrate usin the `-mtime n` command line option to find files / directories modified less than one day ago when *such files do exist*.
+      Around several minutes after running the command above, I made a modification to the file `chapter-1.txt`. Now, this example uses the same command as the previous example to demonstrate using the `-mtime n` command line option to find files / directories modified less than one day ago when *such files do exist*.
       ```
       saras@Sara MINGW64 ~/Documents/CSE12/docsearch/technical (main)
       $ find -mtime -1
