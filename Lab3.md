@@ -2,7 +2,7 @@
 By: Sara Standlee
 ## Part 1 - Bugs
 * A failure-inducing input for the buggy program (as a JUnit test):
-  Below is the code for a JUnit test which causes a failure in the buggy program. The input is {1,2,3,5}, and we expect {5,3,2,1}. However, instead, we recieve {0,0,0,0}.
+  Below is the code for a JUnit test which causes a failure in the buggy program. The input is {1,2,3,5}, and we expect {5,3,2,1}. However, instead, we receive {0,0,0,0}.
   ```
   import static org.junit.Assert.*;
   import org.junit.*;
@@ -36,7 +36,7 @@ By: Sara Standlee
 
   
 * The symptom, as the output of running the tests
-  Below shows the output of running the tests. The failure of the test case with a non-empty array as an innput is the symptom.   
+  Below shows the output of running the tests. The failure of the test case with a non-empty array as an input is the symptom.   
 ```
 saras@Sara MINGW64 ~/Documents/CSE12/lab3 (main)
 $ javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java
@@ -181,7 +181,7 @@ The main issue was the line `arr[i] = newArray[arr.length - i - 1];` in the 'bef
 
 
   - `-type c`:
-    - This command line option finds file types such as files, directories, etc. This command is commonly used in the form `find [starting_directory] -type [file_type]`. It also can be used simply in the form `find -type [file_type]"`. In this case, the `find` command will start searching from the current working directory for files that match the specified file type. `f` is used to find regular files and `d` is used to find directories.
+    - This command line option finds file types such as files, directories, etc. This command is commonly used in the form `find [starting_directory] -type [file_type]`. It also can be used simply in the form `find -type [file_type]`. In this case, the `find` command will start searching from the current working directory for files that match the specified file type. `f` is used to find regular files and `d` is used to find directories.
     - Example 1: \
       This example demonstrates using the '-type c` command line option to find all directories:
       ```
@@ -200,7 +200,7 @@ The main issue was the line `arr[i] = newArray[arr.length - i - 1];` in the 'bef
       ./plos
       ```
     - Example 2: \
-      This example deomstrates using the '-type c' command line option to find all files within a subdirectory:
+      This example demonstrates using the '-type c' command line option to find all files within a subdirectory:
       saras@Sara MINGW64 ~/Documents/CSE12/docsearch/technical (main)
       ```
       $ find 911report/ -type f
