@@ -127,7 +127,7 @@ The main issue was the line `arr[i] = newArray[arr.length - i - 1];` in the 'bef
       $ find -name chapter-1.txt
       ./911report/chapter-1.txt
       ```
-    - Example 2 of using `-name pattern`:
+    - Example 2 of using `-name pattern`: \
       This example demonstrates using the `-name pattern` command line option for a file that is located in a *nested directory*. 
       ```
       saras@Sara MINGW64 ~/Documents/CSE12/docsearch/technical (main)
@@ -142,14 +142,14 @@ The main issue was the line `arr[i] = newArray[arr.length - i - 1];` in the 'bef
 
   - `-path pattern`:
     - This command line option is used to search for files based on their complete paths. The entire path of a file must match the specified pattern for it to be considered a match. This command is commonly used in the form `find [starting directory] -path "/path/to/find"` and is used to find files by name, starting from the specified directory. It also can be used simply in the form `find -path "/path/to/find"`. In this case, the `find` command will start searching from the current working directory for files or directories that match the specified path pattern.
-    - Example 1 of using `-path pattern`:
+    - Example 1 of using `-path pattern`: \
       This example demonstrates using the `-path pattern` command line option with the full path to a *directory* from the current working directory.
       ```
       saras@Sara MINGW64 ~/Documents/CSE12/docsearch/technical (main)
       $ find -path "./government/Alcohol_Problems"
       ./government/Alcohol_Problems
       ```
-    - Example 2 of using `path pattern`:
+    - Example 2 of using `path pattern`: \
       This example demonstrates using the `-path pattern` command line option with a relative wildcard path to a *file* from the current working directory.
       ```
       saras@Sara MINGW64 ~/Documents/CSE12/docsearch/technical (main)
@@ -162,13 +162,13 @@ The main issue was the line `arr[i] = newArray[arr.length - i - 1];` in the 'bef
 
   - `-mtime n`:
     - This command line option finds files / directories based on their modification time. This command is commonly used in the form `find /path/to/search -mtime n`. It also can be used simply in the form `find -mtime n"`. In this case, the `find` command will start searching from the current working directory for files / directories that match the specified modification time. If we use a plus sign before `n`, this means we are looking for a file modified more than `n` days ago. If we use a negative sign before `n`, we are looking for a file modified less than `n` days ago. 
-    - Example 1:
+    - Example 1: \
       This example demonstrates using the `-mtime n` command line option to find files / directories modified less than one day ago when *no such files exist*. Notice that there is no output in this case. 
       ```
       saras@Sara MINGW64 ~/Documents/CSE12/docsearch/technical (main)
       $ find -mtime -1
       ```
-    - Example 2:
+    - Example 2: \
       Around several minutes after running the command above, I made a modification to the file `chapter-1.txt`. Now, this example uses the same command as the previous example to demonstrate usin the `-mtime n` command line option to find files / directories modified less than one day ago when *such files do exist*.
       ```
       saras@Sara MINGW64 ~/Documents/CSE12/docsearch/technical (main)
@@ -182,7 +182,7 @@ The main issue was the line `arr[i] = newArray[arr.length - i - 1];` in the 'bef
 
   - `-type c`:
     - This command line option finds file types such as files, directories, etc. This command is commonly used in the form `find [starting_directory] -type [file_type]`. It also can be used simply in the form `find -type [file_type]"`. In this case, the `find` command will start searching from the current working directory for files that match the specified file type. `f` is used to find regular files and `d` is used to find directories.
-    - Example 1:
+    - Example 1: \
       This example demonstrates using the '-type c` command line option to find all directories:
       ```
       saras@Sara MINGW64 ~/Documents/CSE12/docsearch/technical (main)
@@ -199,7 +199,7 @@ The main issue was the line `arr[i] = newArray[arr.length - i - 1];` in the 'bef
       ./government/Post_Rate_Comm
       ./plos
       ```
-    - Example 2:
+    - Example 2: \
       This example deomstrates using the '-type c' command line option to find all files within a subdirectory:
       saras@Sara MINGW64 ~/Documents/CSE12/docsearch/technical (main)
       ```
