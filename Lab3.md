@@ -1,7 +1,8 @@
 # Lab Report 3
 By: Sara Standlee
 ## Part 1 - Bugs
-* A failure-inducing input for the buggy program (as a JUnit test): 
+* A failure-inducing input for the buggy program (as a JUnit test):
+  Below is the code for a JUnit test which causes a failure in the buggy program. The input is {1,2,3,5}, and we expect {5,3,2,1}. However, instead, we recieve {0,0,0,0}.
   ```
   import static org.junit.Assert.*;
   import org.junit.*;
@@ -22,6 +23,7 @@ By: Sara Standlee
 
   
 * An input that doesn't induce a failure (as a JUnit test):
+  Below is the code for a JUnit test which does not induce a failure. The input is an empty array { }, and the expected output is also an empty array { }. This test case passes: The buggy code works for this test case. 
   ```
   public class ArrayTests {
     @Test
@@ -31,10 +33,10 @@ By: Sara Standlee
     }
   }
   ```
-  This test passes.
 
   
 * The symptom, as the output of running the tests
+  Below shows the output of running the tests. The failure of the test case with a non-empty array as an innput is the symptom.   
 ```
 saras@Sara MINGW64 ~/Documents/CSE12/lab3 (main)
 $ javac -cp ".;lib/hamcrest-core-1.3.jar;lib/junit-4.13.2.jar" *.java
@@ -81,7 +83,7 @@ Tests run: 2,  Failures: 1
     }
   }
   ```
-  The code after:
+  The code after (note the line in the for-loop is changed, this is the code change required to fix the buggy code):
   ```
   public class ArrayExamples {
     static int[] reversed(int[] arr) {
