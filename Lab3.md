@@ -112,7 +112,8 @@ Tests run: 2,  Failures: 1
 Why this fixed the issue: \
 The main issue was the line `arr[i] = newArray[arr.length - i - 1];` in the 'before' code. This line needed to be replaced with the line `newArray[i] = arr[arr.length - i - 1];`. Before, the original array was being modified based on the new array (which is filled with the default zeroes). The new line `newArray[i] = arr[arr.length - i - 1];` fixes the issue because now the new array is being assigned values based on the original array, from back to front, which is what we wanted.  
 
-  ## Part 2 - Researching Commands
+
+## Part 2 - Researching Commands
 * Consider the command `find`:
 * Four interesting command line options / alternate ways to use the command:
 
