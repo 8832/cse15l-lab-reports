@@ -115,13 +115,13 @@ The main issue was the line `arr[i] = newArray[arr.length - i - 1];` in the 'bef
   ## Part 2 - Researching Commands
 * Consider the command `find`:
 * Four interesting command line options / alternate ways to use the command:
-** One
+  - One
 
-** One
+  - One
 
-** One
+  - One
 
-** One
+  - One
 
 
 
