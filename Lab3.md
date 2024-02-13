@@ -115,15 +115,72 @@ The main issue was the line `arr[i] = newArray[arr.length - i - 1];` in the 'bef
   ## Part 2 - Researching Commands
 * Consider the command `find`:
 * Four interesting command line options / alternate ways to use the command:
-  - One
 
-  - One
+  
+  - `-name pattern`:
+    - This command line option is commonly used in the form `find /path/to/search -name "filename.txt"` and is used to find files by name starting from the specified directory. It also can be used simply in the form `find -name "filename.txt"`. In this case, the `find` command will start searching for files named "filename.txt" from the current directory and its subdirectories. 
+    - Example 1 of using `-name pattern`: \
+      This example demonstrates using the `-name pattern` command line option for a file that is located in a *subdirectory*.
+      ```
+      saras@Sara MINGW64 ~/Documents/CSE12/docsearch/technical (main)
+      $ find -name chapter-1.txt
+      ./911report/chapter-1.txt
+      ```
+    - Example 2 of using `-name pattern`:
+      This example demonstrates using the `-name pattern` command line option for a file that is located in a *nested directory*. 
+      ```
+      saras@Sara MINGW64 ~/Documents/CSE12/docsearch/technical (main)
+      $ find -name Annual_Fee.txt
+      ./government/Media/Annual_Fee.txt
+      ```
+    - Source for how I found out about this command: `man` command: `man find`. The manual page referenced through this command is a part of the POSIX Programmer's Manual.
+   
 
-  - One
-
-  - One
 
 
+
+  - `-path pattern`:
+    - This command line option is used to search for files based on their complete paths. The entire path of a file must match the specified pattern for it to be considered a match. This command is commonly used in the form `find [starting directory] -path "/path/to/find"` and is used to find files by name, starting from the specified directory. It also can be used simply in the form `find -path "/path/to/find"`. In this case, the `find` command will start searching from the current working directory for files or directories that match the specified path pattern.
+    - Example 1 of using `-path pattern`:
+      This example demonstrates using the `-path pattern` command line option with the full path to a *directory* from the current working directory.
+      ```
+      saras@Sara MINGW64 ~/Documents/CSE12/docsearch/technical (main)
+      $ find -path "./government/Alcohol_Problems"
+      ./government/Alcohol_Problems
+      ```
+    - Example 2 of using `path pattern`:
+      This example demonstrates using the `-path pattern` command line option with a relative wildcard path to a *file* from the current working directory.
+      ```
+      saras@Sara MINGW64 ~/Documents/CSE12/docsearch/technical (main)
+      $ find -path "*/Session4-PDF.txt"
+      ./government/Alcohol_Problems/Session4-PDF.txt
+      ```
+    - Source for how I found out about this command: `man` command: `man find`. The manual page referenced through this command is a part of the POSIX Programmer's Manual.
+
+    
+
+  - `-mtime n`:
+    - This command line option finds files / directories based on their modification time. This command is commonly used in the form `find /path/to/search -mtime n`. It also can be used simply in the form `find -mtime n"`. In this case, the `find` command will start searching from the current working directory for files / directories that match the specified modification time. If we use a plus sign before `n`, this means we are looking for a file modified more than `n` days ago. If we use a negative sign before `n`, we are looking for a file modified less than `n` days ago. 
+    - Example 1:
+      This example demonstrates using the `-mtime n` command line option to find files / directories modified less than one day ago when *no such files exist*. Notice that there is no output in this case. 
+      ```
+      saras@Sara MINGW64 ~/Documents/CSE12/docsearch/technical (main)
+      $ find -mtime -1
+      ```
+    - Example 2:
+      Around several minutes after running the command above, I made a modification to the file `chapter-1.txt`. Now, this example uses the same command as the previous example to demonstrate usin the `-mtime n` command line option to find files / directories modified less than one day ago when *such files do exist*.
+      ```
+      saras@Sara MINGW64 ~/Documents/CSE12/docsearch/technical (main)
+      $ find -mtime -1
+      ./911report/chapter-1.txt
+      ```
+      - Source for how I found out about this command: `man` command: `man find`. The manual page referenced through this command is a part of the POSIX Programmer's Manual.
+     
+
+
+
+  - `-mtime n`:
+    - This command line option finds files / directories based on their modification time. This command is commonly used in the form `find /path/to/search -
 
 
 
