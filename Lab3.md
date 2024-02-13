@@ -161,7 +161,7 @@ The main issue was the line `arr[i] = newArray[arr.length - i - 1];` in the 'bef
     
 
   - `-mtime n`:
-    - This command line option finds files / directories based on their modification time. This command is commonly used in the form `find /path/to/search -mtime n`. It also can be used simply in the form `find -mtime n"`. In this case, the `find` command will start searching from the current working directory for files / directories that match the specified modification time. If we use a plus sign before `n`, this means we are looking for a file modified more than `n` days ago. If we use a negative sign before `n`, we are looking for a file modified less than `n` days ago. 
+    - This command line option finds files / directories based on their modification time. This command is commonly used in the form `find /path/to/search -mtime n`. It also can be used simply in the form `find -mtime n`. In this case, the `find` command will start searching from the current working directory for files / directories that match the specified modification time. If we use a plus sign before `n`, this means we are looking for a file modified more than `n` days ago. If we use a negative sign before `n`, we are looking for a file modified less than `n` days ago. 
     - Example 1: \
       This example demonstrates using the `-mtime n` command line option to find files / directories modified less than one day ago when *no such files exist*. Notice that there is no output in this case. 
       ```
