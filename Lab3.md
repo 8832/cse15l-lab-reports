@@ -179,8 +179,51 @@ The main issue was the line `arr[i] = newArray[arr.length - i - 1];` in the 'bef
 
 
 
-  - `-mtime n`:
-    - This command line option finds files / directories based on their modification time. This command is commonly used in the form `find /path/to/search -
+  - `-type c`:
+    - This command line option finds file types such as files, directories, etc. This command is commonly used in the form `find [starting_directory] -type [file_type]`. It also can be used simply in the form `find -type [file_type]"`. In this case, the `find` command will start searching from the current working directory for files that match the specified file type. `f` is used to find regular files and `d` is used to find directories.
+    - Example 1:
+      This example demonstrates using the '-type c` command line option to find all directories:
+      ```
+      saras@Sara MINGW64 ~/Documents/CSE12/docsearch/technical (main)
+      $ find -type d
+      .
+      ./911report
+      ./biomed
+      ./government
+      ./government/About_LSC
+      ./government/Alcohol_Problems
+      ./government/Env_Prot_Agen
+      ./government/Gen_Account_Office
+      ./government/Media
+      ./government/Post_Rate_Comm
+      ./plos
+      ```
+    - Example 2:
+      This example deomstrates using the '-type c' command line option to find all files within a subdirectory:
+      saras@Sara MINGW64 ~/Documents/CSE12/docsearch/technical (main)
+      ```
+      $ find 911report/ -type f
+      911report/chapter-1.txt
+      911report/chapter-10.txt
+      911report/chapter-11.txt
+      911report/chapter-12.txt
+      911report/chapter-13.1.txt
+      911report/chapter-13.2.txt
+      911report/chapter-13.3.txt
+      911report/chapter-13.4.txt
+      911report/chapter-13.5.txt
+      911report/chapter-2.txt
+      911report/chapter-3.txt
+      911report/chapter-5.txt
+      911report/chapter-6.txt
+      911report/chapter-7.txt
+      911report/chapter-8.txt
+      911report/chapter-9.txt
+      911report/preface.txt
+      ```
+      - Source for how I found out about this command: `man` command: `man find`. The manual page referenced through this command is a part of the POSIX Programmer's Manual.
+    
+
 
 
 
