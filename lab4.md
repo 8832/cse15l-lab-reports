@@ -11,7 +11,7 @@
   
 * Step 6: Run the tests, demonstrating that they fail
   Keys Pressed: `<up><up><up><enter>`. This is the command `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`. This command was three up in my history. Prior to this command, I had used the command `cd myLab7/` to change directories into the myLab7 directory. I then pressed `<up><up><up><enter>`. This is the command `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests.java`. It was located up three in my history. These commands are to run the jUnit tests. \
-  ![Image](Step6.JPG)
+  ![Image](Step6a.JPG)
 
   
 * Step 7: Edit the code file to fix the failing test. 
