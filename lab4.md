@@ -19,4 +19,6 @@
   ![Image](Step7a.JPG) \
   ![Image](Step7b.JPG) \
 * Step 8
+
+  ![Image](Step8.JPG)
 * Step 9
