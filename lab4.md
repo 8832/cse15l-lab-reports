@@ -10,15 +10,19 @@
 
   
 * Step 6: Run the tests, demonstrating that they fail
-  Keys Pressed: `<up><up><up><enter>`. This is the command `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar *.java`. This command was three up in my history. Prior to this command, I had used the command `cd myLab7/` to change directories into the myLab7 directory. I then pressed `<up><up><up><enter>`. This is the command `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore ListExamplesTests.java`. It was located up three in my history. These commands are to run the jUnit tests. \
+  Keys Pressed: `cd my<tab><enter>`. This is the command `cd myLab7changes directories into the myLab7/ directory. I then pressed the keys `bash<space>tes<tab><enter>` which is the command `bash test.sh`, which runs the test.sh script. The tests are run and the output demonstrates that there is a failure. \
   ![Image](Step6a.JPG)
 
   
 * Step 7: Edit the code file to fix the failing test. 
-  Keys Pressed: `vim<space><ctrl><v>` Thisi command is `vim ListExamples.java` and is used to open the file ListExamples.java in vim. Prior to this command, I had copied 'ListExamples.java' to my clipboard from the Week7 Lab instructions. Once in vim, I used pressed the keys: `44j11lxi2<escape>:wq<enter>`. This navigated me down 44 lines and over 11 characters, which placed by character exactly above the '1' in 'index1'. I used `x` to delete the '1', `i` to switch to insert mode, and pressed `2` to insert '2' (which has now replaced the '1'). I then pressed `esc` to return to normal mode. Then `:wq` and then <enter> to save and exit vim. This process edits the code file to fix the failing test. \
+  Keys Pressed: `vim<space><ctrl><v>` This command is `vim ListExamples.java` and is used to open the file ListExamples.java in vim. Prior to this command, I had copied 'ListExamples.java' to my clipboard from the Week7 Lab instructions. Once in vim, I used pressed the keys: `44j11lxi2<escape>:wq<enter>`. This navigated me down 44 lines and over 11 characters, which placed by character exactly above the '1' in 'index1'. I used `x` to delete the '1', `i` to switch to insert mode, and pressed `2` to insert '2' (which has now replaced the '1'). I then pressed `esc` to return to normal mode. Then `:wq` and then <enter> to save and exit vim. This process edits the code file to fix the failing test. \
   ![Image](Step7a.JPG) \
-  ![Image](Step7b.JPG) \
-* Step 8
-
+  ![Image](Step7b.JPG) 
+  
+* Step 8: Run the tests demonstrating they now succeed
+  Keys Pressed: `<up><up><up><enter>` This command is `bash test.sh`, which was located three up in my command history. This command runs the test.sh script, and demonstrates that the tests now pass. \
   ![Image](Step8.JPG)
-* Step 9
+  
+* Step 9: Commit and push the resulting change to your Github account.
+  Keys Pressed: `git<space>addLis<tab>.j<tab><enter>`. This is the command `git add ListExamples.java`. I used tab to complete the file name. I then pressed `git<space>commit<space>-m<space>"changed<space>index1<space>to<space>index2"`. I then pressed the keys `git<space>push`. Together, this commits and pushes the change I made to ListExamples.java to my Github Account. Going into my Github account and checking, we can see the change I made in vim is now reflected in the ListExamples.java file in my Github Account. \
+  ![Image](Step9.JPG)
