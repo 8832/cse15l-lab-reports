@@ -10,7 +10,7 @@
 
   
 * Step 6: Run the tests, demonstrating that they fail \
-  Keys Pressed: `cd my<tab>`. This is the command `cd myLab7` and it changes directories into the myLab7/ directory. I then pressed the keys `bash<space>tes<tab><enter>` which is the command `bash test.sh`, which runs the test.sh script. The tests are run and the output demonstrates that there is a failure. \
+  Keys Pressed: `cd my<tab>`. This is the command `cd myLab7` and it changes directories into the myLab7/ directory. The tab key is used to complete the directory myLab7, which was a subdirectory of the current working directory before changing into myLab7. I then pressed the keys `bash<space>tes<tab>` which is the command `bash test.sh`, which runs the test.sh script. The tests are run and the output demonstrates that there is a failure. Again, the tab key was used to complete test.sh, which is a shell script located withing the current working directory.\
   ![Image](Step6a.JPG)
 
   
