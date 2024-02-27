@@ -24,5 +24,5 @@
   ![Image](Step8.JPG)
   
 * Step 9: Commit and push the resulting change to your Github account. \
-  Keys Pressed: `git<space>addLis<tab>.j<tab><enter>`. This is the command `git add ListExamples.java`. I used tab to complete the file name. I then pressed `git<space>commit<space>-m<space>"changed<space>index1<space>to<space>index2"`. I then pressed the keys `git<space>push`. Together, this commits and pushes the change I made to ListExamples.java to my Github Account. Going into my Github account and checking, we can see the change I made in vim is now reflected in the ListExamples.java file in my Github Account. \
+  Keys Pressed: `git<space>addLis<tab>.j<tab><enter>`. This is the command `git add ListExamples.java`. I used tab to complete the file name. For my second command, I pressed `git<space>commit<space>-m<space>"changed<space>index1<space>to<space>index2"`. For my third command, I pressed the keys `git<space>push`. Together, this commits and pushes the change I made to ListExamples.java to my Github Account. Going into my Github account and checking the myLab7 repository, we can see the change I made in vim is now reflected in the ListExamples.java file in the myLab7 repository on Github. \
   ![Image](Step9.JPG)
