@@ -20,7 +20,7 @@
   ![Image](Step7b.JPG) 
   
 * Step 8: Run the tests demonstrating they now succeed \
-  Keys Pressed: `<up><up><up><enter>` This command is `bash test.sh`, which was located three up in my command history. This command runs the test.sh script, and demonstrates that the tests now pass. \
+  Keys Pressed: `<up><up><up><enter>` This command is `bash test.sh`, which was located three up in my command history. I used the up arrow to access this command in my history. This command runs the test.sh script, and the output demonstrates that the tests now pass. \
   ![Image](Step8.JPG)
   
 * Step 9: Commit and push the resulting change to your Github account. \
