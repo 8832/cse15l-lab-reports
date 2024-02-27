@@ -1,6 +1,6 @@
 # Lab Report 4
 * Step 4: Log into ieng6 \
-  Keys Pressed: `<up><enter>`. The `ssh sstandlee@ieng6.ucsd.edu` command was one up in my history. This command logs me into my ieng6 machine. \
+  Keys Pressed: `<up><enter>`. The `ssh sstandlee@ieng6.ucsd.edu` command was one up in my history, so I used the arrow key to access it. This command logs me into my ieng6 machine. \
   ![Image](Step4.JPG)
 
   
