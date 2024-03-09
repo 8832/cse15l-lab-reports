@@ -17,8 +17,8 @@
 * Step 7: Edit the code file to fix the failing test. \
   Keys Pressed: `vim<space><ctrl><v>` This command is `vim ListExamples.java` and is used to open the file ListExamples.java in vim. Prior to this command, I had copied 'ListExamples.java' to my clipboard from the Week7 Lab instructions using `<ctrl><c>. Once in vim, I used the keys: `44j11lxi2<escape>:wq<enter>`. This navigated me down 44 lines and over 11 characters, which placed by character exactly above the '1' in 'index1'. I used `x` to delete the '1', `i` to switch to insert mode, and pressed `2` to insert '2' (which has now replaced the '1'). I then pressed `esc` to return to normal mode. Then `:wq` and then <enter> to save and exit vim. This process edits the code file to fix the failing test. \
 Image1: \
-   ![Image](Step7a.JPG)
-Image2 :\
+   ![Image](Step7a.JPG) \
+Image2: \
   ![Image](Step7b.JPG) 
   
 * Step 8: Run the tests demonstrating they now succeed \
