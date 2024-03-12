@@ -60,41 +60,38 @@ By: Sara Standlee
     }
     ```
      * The content of CustomTester.java after fixing the bug:
-     ```
-     import org.junit.Test;
-     
-     import static org.junit.Assert.*;
-     import java.util.logging.Logger;
-     
-     public class CustomTester {
-             private static final Logger logger = Logger.getLogger(CustomTester.class.getName());
-     
-             @Test(timeout = 500)
-             public void testCombineTwoLists() {
-               Combine list = new Combine();
-               Combine list2 = new Combine();
-               list.add(1);
-               list.add(2);
-               list2.add(2);
-               list2.add(3);
-               list.combine(list2);
-               Combine combinedList = new Combine();
-               combinedList.add(1);
-               combinedList.add(2);
-               combinedList.add(2);
-               combinedList.add(3);
-               //print the actual value
-               for (int i = 0; i < list.size(); i++) { 
-                   logger.info("Actual Element "+ i + ": " + list.get(i));
-               }
-               //print the expected value
-               for (int i = 0; i < list.size(); i++) {
-                 logger.info("Expected Element "+ i + ": " + combinedList.get(i));
-               } 
-               for (int i = 0; i < list.size(); i++) {
-                   assertEquals(list.get(i), combinedList.get(i));
-               }
-             }     
+    ```
+    import org.junit.Test;
+    import static org.junit.Assert.*;
+    import java.util.logging.Logger; 
+    public class CustomTester {
+      private static final Logger logger = Logger.getLogger(CustomTester.class.getName());
+      @Test(timeout = 500)
+      public void testCombineTwoLists() {
+        Combine list = new Combine();
+        Combine list2 = new Combine();
+        list.add(1);
+        list.add(2);
+        list2.add(2);
+        list2.add(3);
+        list.combine(list2);
+        Combine combinedList = new Combine();
+        combinedList.add(1);
+        combinedList.add(2);
+        combinedList.add(2);
+        combinedList.add(3);
+        //print the actual value
+        for (int i = 0; i < list.size(); i++) { 
+          logger.info("Actual Element "+ i + ": " + list.get(i));
+        }
+        //print the expected value
+        for (int i = 0; i < list.size(); i++) {
+          logger.info("Expected Element "+ i + ": " + combinedList.get(i));
+        } 
+        for (int i = 0; i < list.size(); i++) {
+          assertEquals(list.get(i), combinedList.get(i));
+        }
+      }     
      }
      ```
      * The content of Combine.java before fixing the bug:
