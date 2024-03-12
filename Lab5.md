@@ -18,14 +18,14 @@ By: Sara Standlee
   * The file & directory structure needed
     * We have three files relevant to our bug. The first is the file `Combine.java`, which holds our buggy method. The second is the file `CustomTester.java`, which holds the test that is failing when running our buggy method. And the third is the bash script `run.sh` which holds the commands that compile and run the files, saves it to a file, and prints this file (with the results of the test) into our terminal. All three of these are held in the directory `starter`, which is located in the overall directory `LAB5_CSE15L`. This overall directory also holds the jUnit jar files.
     ```
-     saras@Sara MINGW64 ~/Documents/CSE12/LAB5_CSE15L
-     $ ls
-     imgur/  lib/  libs/  starter/
+    saras@Sara MINGW64 ~/Documents/CSE12/LAB5_CSE15L
+    $ ls
+    imgur/  lib/  libs/  starter/
      
-     saras@Sara MINGW64 ~/Documents/CSE12/LAB5_CSE15L
-     $ ls starter/
-     Combine.class  CustomTester.class  output.txt
-     Combine.java   CustomTester.java   run.sh
+    saras@Sara MINGW64 ~/Documents/CSE12/LAB5_CSE15L
+    $ ls starter/
+    Combine.class  CustomTester.class  output.txt
+    Combine.java   CustomTester.java   run.sh
     ```
   * The contents of each file before fixing the bug
      * The content of the run.sh script remains the same before and after fixing the bug:
@@ -36,31 +36,31 @@ By: Sara Standlee
     cat output.txt
     ```
      * The content of the CustomTester.java before fixing the bug:
-     ```
-     import org.junit.Test;
-     import static org.junit.Assert.*;
+    ```
+    import org.junit.Test;
+    import static org.junit.Assert.*;
      
-     public class CustomTester {
-             @Test(timeout = 500)
-             public void testCombineTwoLists() {
-               Combine list = new Combine();
-               Combine list2 = new Combine();
-               list.add(1);
-               list.add(2);
-               list2.add(2);
-               list2.add(3);
-               list.combine(list2);
-               Combine combinedList = new Combine();
-               combinedList.add(1);
-               combinedList.add(2);
-               combinedList.add(2);
-               combinedList.add(3);
-               for (int i = 0; i < list.size(); i++) {
-                   assertEquals(list.get(i), combinedList.get(i));
-               }
-             }      
-     }
-     ```
+    public class CustomTester {
+            @Test(timeout = 500)
+            public void testCombineTwoLists() {
+              Combine list = new Combine();
+              Combine list2 = new Combine();
+              list.add(1);
+              list.add(2);
+              list2.add(2);
+              list2.add(3);
+              list.combine(list2);
+              Combine combinedList = new Combine();
+              combinedList.add(1);
+              combinedList.add(2);
+              combinedList.add(2);
+              combinedList.add(3);
+              for (int i = 0; i < list.size(); i++) {
+                  assertEquals(list.get(i), combinedList.get(i));
+              }
+            }      
+    }
+    ```
      * The content of CustomTester.java after fixing the bug:
      ```
      import org.junit.Test;
