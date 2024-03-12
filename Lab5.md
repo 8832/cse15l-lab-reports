@@ -20,8 +20,7 @@ By: Sara Standlee
 ```
      saras@Sara MINGW64 ~/Documents/CSE12/LAB5_CSE15L
      $ ls
-     imgur/  lib/  libs/  starter/
-      
+     imgur/  lib/  libs/  starter/  
      saras@Sara MINGW64 ~/Documents/CSE12/LAB5_CSE15L
      $ ls starter/
      Combine.class  CustomTester.class  output.txt
