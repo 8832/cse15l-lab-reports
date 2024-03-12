@@ -16,7 +16,7 @@ By: Sara Standlee
 
 * All the information needed about the setup:
   * The file & directory structure needed
-  We have three files relevant to our bug. The first is the file `Combine.java`, which holds our buggy method. The second is the file `CustomTester.java`, which holds the test that is failing when running our buggy method. And the third is the bash script `run.sh` which holds the commands that compile and run the files, saves it to a file, and prints this file (with the results of the test) into our terminal. All three of these are held in the directory `starter`, which is located in the overall directory `LAB5_CSE15L`. This overall directory also holds the jUnit jar files.
+    * We have three files relevant to our bug. The first is the file `Combine.java`, which holds our buggy method. The second is the file `CustomTester.java`, which holds the test that is failing when running our buggy method. And the third is the bash script `run.sh` which holds the commands that compile and run the files, saves it to a file, and prints this file (with the results of the test) into our terminal. All three of these are held in the directory `starter`, which is located in the overall directory `LAB5_CSE15L`. This overall directory also holds the jUnit jar files.
      ```
      saras@Sara MINGW64 ~/Documents/CSE12/LAB5_CSE15L
      $ ls
