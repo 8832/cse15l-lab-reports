@@ -37,8 +37,7 @@ By: Sara Standlee
      * The content of the CustomTester.java before fixing the bug:
     ```
     import org.junit.Test;
-    import static org.junit.Assert.*;
-     
+    import static org.junit.Assert.*; 
     public class CustomTester {
             @Test(timeout = 500)
             public void testCombineTwoLists() {
