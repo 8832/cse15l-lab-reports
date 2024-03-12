@@ -28,14 +28,14 @@ By: Sara Standlee
      Combine.java   CustomTester.java   run.sh
      ```
   * The contents of each file before fixing the bug
-   * The content of the run.sh script remains the same before and after fixing the bug:
+     * The content of the run.sh script remains the same before and after fixing the bug:
     ```
     javac Combine.java
     javac -cp ".;..\libs\junit-4.13.2.jar;..\libs\hamcrest-2.2.jar" CustomTester.java
     java -cp ".;..\libs\junit-4.13.2.jar;..\libs\hamcrest-2.2.jar" org.junit.runner.JUnitCore CustomTester > output.txt
     cat output.txt
     ```
-   * The content of the CustomTester.java before fixing the bug:
+     * The content of the CustomTester.java before fixing the bug:
      ```
      import org.junit.Test;
      import static org.junit.Assert.*;
@@ -61,7 +61,7 @@ By: Sara Standlee
              }      
      }
      ```
-   * The content of CustomTester.java after fixing the bug:
+     * The content of CustomTester.java after fixing the bug:
      ```
      import org.junit.Test;
      
@@ -99,7 +99,7 @@ By: Sara Standlee
              }     
      }
      ```
-   * The content of Combine.java before fixing the bug:
+     * The content of Combine.java before fixing the bug:
      ```      
      import java.util.ArrayList;
      
@@ -132,7 +132,7 @@ By: Sara Standlee
          }
      }
      ```
-   * The content of Combine.java after fixing the bug:
+     * The content of Combine.java after fixing the bug:
      ```     
      import java.util.ArrayList;
      
@@ -167,7 +167,7 @@ By: Sara Standlee
      ```
 
   * The full command line (or lines) you ran to trigger the bug
-    The command lines run to trigger the bug was `bash run.sh`. This runs the bash script. The commands in the bash script are below. These comands compile the `Combine.java` file and the `CustomTester.java` file, saves the output to a file called `output.txt`, then prints this output into the terminal. Running the `CustomTester.java` file triggered the bug, as it had the code that showed the wrong actual output vs the expected output.
+    * The command lines run to trigger the bug was `bash run.sh`. This runs the bash script. The commands in the bash script are below. These comands compile the `Combine.java` file and the `CustomTester.java` file, saves the output to a file called `output.txt`, then prints this output into the terminal. Running the `CustomTester.java` file triggered the bug, as it had the code that showed the wrong actual output vs the expected output.
     ```
     javac Combine.java
     javac -cp ".;..\libs\junit-4.13.2.jar;..\libs\hamcrest-2.2.jar" CustomTester.java
