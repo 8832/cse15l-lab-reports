@@ -4,6 +4,8 @@ By: Sara Standlee
 * The original post from a student with a screenshot showing a symptom and a description of a guess at the bug/some sense of what the failure-inducing input is.
    * Hello. My test for my Combine method is failing. My method aims to combine two lists. However, I recieve the failure message. 
    * ![Image](Lab5CombineMethodScreenshot.png)
+   * ![Image](Failures.png)
+
 
 * A response from a TA asking a leading question or suggesting a command to try
   * Try printing the failure message out to the terminal and looking at what the message failure says. Also, use print statements to print what the expected list is and what the actual list is. Where is the failure stemming from?
