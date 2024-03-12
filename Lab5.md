@@ -175,7 +175,7 @@ By: Sara Standlee
     cat output.txt
     ```
 
-  *  description of what to edit to fix the bug
+  * Description of what to edit to fix the bug
    * Line 14 in the java file `Combine.java` needs to be changed from `int num = list.get(i);` to `int num = otherList.get(i);`. This makes it so that the contents from `otherList` are being added to `list`, which is now the combined list of the two methods, as desired. 
 
 
