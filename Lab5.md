@@ -97,67 +97,55 @@ By: Sara Standlee
      * The content of Combine.java before fixing the bug:
      ```      
      import java.util.ArrayList;
-     
      public class Combine {
-         private ArrayList<Integer> list;  
-     
-         // Constructor
-         public Combine() {
-             this.list = new ArrayList<>();
+       private ArrayList<Integer> list;  
+       // Constructor
+       public Combine() {
+         this.list = new ArrayList<>();
+       }
+       public void combine(Combine otherList) {
+         for (int i = 0; i < otherList.size(); i++) {
+           int num = list.get(i);
+           add(num);
          }
-     
-         public void combine(Combine otherList) {
-             for (int i = 0; i < otherList.size(); i++) {
-                 int num = list.get(i);
-                 add(num);
-             }
-         }
-     
-         public int size() {
-             return this.list.size();
-         }
-     
-         public void add(Integer element) {
-             this.list.add(element);
-         }
-     
-         public int get(int index) {
-             int num = this.list.get(index);
-             return num;
-         }
+       }
+       public int size() {
+         return this.list.size();
+       }
+       public void add(Integer element) {
+         this.list.add(element);
+       }
+       public int get(int index) {
+         int num = this.list.get(index);
+         return num;
+       }
      }
      ```
      * The content of Combine.java after fixing the bug:
      ```     
      import java.util.ArrayList;
-     
      public class Combine {
-         private ArrayList<Integer> list;  
-     
-         // Constructor
-         public Combine() {
-             this.list = new ArrayList<>();
+       private ArrayList<Integer> list;  
+       // Constructor
+       public Combine() {
+         this.list = new ArrayList<>();
+       }
+       public void combine(Combine otherList) {
+         for (int i = 0; i < otherList.size(); i++) {
+           int num = otherList.get(i); //this line fixed
+           add(num);
          }
-     
-         public void combine(Combine otherList) {
-             for (int i = 0; i < otherList.size(); i++) {
-                 int num = otherList.get(i);  //this line was fixed
-                 add(num);
-             }
-         }
-     
-         public int size() {
-             return this.list.size();
-         }
-     
-         public void add(Integer element) {
-             this.list.add(element);
-         }
-     
-         public int get(int index) {
-             int num = this.list.get(index);
-             return num;
-         }
+       }
+       public int size() {
+         return this.list.size();
+       }
+       public void add(Integer element) {
+         this.list.add(element);
+       }
+       public int get(int index) {
+         int num = this.list.get(index);
+         return num;
+       }
      }
      ```
 
