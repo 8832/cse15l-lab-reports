@@ -8,10 +8,10 @@ By: Sara Standlee
 
 
 * A response from a TA asking a leading question or suggesting a command to try
-  * Try printing the failure message out to the terminal and looking at what the message failure says. Also, use print statements to print what the expected list is and what the actual list is. Where is the failure stemming from?
+  * Try printing the failure message out to the terminal and looking at what the message failure says. Also, try printing what the expected list is and what the actual list is. Where is the failure stemming from?
 
 * Another screenshot/terminal output showing what information the student got from trying that, and a clear description of what the bug is.
-   * The message failure describes how 1 is expected, but 2 was the actual value. Printing the expected and actual values clearly indicates that the variable list should be the values [1,2,2,3], but was actually [1,2,1,2].This suggests that the method combine is not combining two separate lists as intended by the method, but instead combining one list with the contents of itself. Then, looking at the original code the student submitted for the method Combine, we can see that on line 14, the student uses `list` instead of `otherList`. This confirms what we expected. Instead of adding the elements from `otherlist` to `list`, the method was adding `list` to `list`, resulting in the failure. 
+   * The failure message describes how 1 is expected, but 2 was the actual value. Printing the expected and actual values clearly indicates that the variable list should be the values [1,2,2,3], but was actually [1,2,1,2]. This suggests that the method combine is not combining two separate lists as intended by the method, but instead combining one list with the contents of itself. Then, looking at the original code the student submitted for the method Combine, we can see that on line 14, the student uses `list` instead of `otherList`. This confirms what we expected. Instead of adding the elements from `otherlist` to `list`, the method was adding `list` to `list`, resulting in the failure. 
    * ![Image](FurtherInfo.png)
 
 * All the information needed about the setup:
