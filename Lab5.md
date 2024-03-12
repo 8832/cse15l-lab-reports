@@ -39,24 +39,24 @@ By: Sara Standlee
     import org.junit.Test;
     import static org.junit.Assert.*; 
     public class CustomTester {
-            @Test(timeout = 500)
-            public void testCombineTwoLists() {
-              Combine list = new Combine();
-              Combine list2 = new Combine();
-              list.add(1);
-              list.add(2);
-              list2.add(2);
-              list2.add(3);
-              list.combine(list2);
-              Combine combinedList = new Combine();
-              combinedList.add(1);
-              combinedList.add(2);
-              combinedList.add(2);
-              combinedList.add(3);
-              for (int i = 0; i < list.size(); i++) {
-                  assertEquals(list.get(i), combinedList.get(i));
-              }
-            }      
+      @Test(timeout = 500)
+      public void testCombineTwoLists() {
+        Combine list = new Combine();
+        Combine list2 = new Combine();
+        list.add(1);
+        list.add(2);
+        list2.add(2);
+        list2.add(3);
+        list.combine(list2);
+        Combine combinedList = new Combine();
+        combinedList.add(1);
+        combinedList.add(2);
+        combinedList.add(2);
+        combinedList.add(3);
+        for (int i = 0; i < list.size(); i++) {
+          assertEquals(list.get(i), combinedList.get(i));
+        }
+      }      
     }
     ```
      * The content of CustomTester.java after fixing the bug:
